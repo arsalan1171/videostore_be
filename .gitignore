@@ -1,0 +1,110 @@
+# Visual Studio files
+.vs/
+*.vscode/
+*_i.c
+*_p.c
+*.sln
+*.suo
+*.user
+*.userprefs
+*.lock.json
+*.sln.docstates
+*.dll
+*.exe
+*.cache
+*.log
+*.sqlite
+*.sqlite3
+*.sdf
+*.pdb
+*.opendb
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# NuGet
+*.nuget.props
+*.paket.props
+*.dll.refresh
+*.exe.refresh
+*.pdb.refresh
+*.dll.refresh.in
+*.exe.refresh.in
+*.pdb.refresh.in
+*.snk
+packages/
+*.nupkg
+!.nuget/
+*.nuspec
+nuget.exe
+nuget/
+*.nupkg.sha512
+
+# MSTest
+testresults/
+[Bb]uild[Ll]og.*
+*.testsettings
+
+# StyleCop
+StyleCopReport.xml
+
+# Ratchet & Clank
+*.ratchet
+
+# Others
+[Dd]ebugPS/
+*.psess
+*.vsp
+*.psuo
+*.cache
+TestResult.xml
+*.docstates
+ipch/
+*.ilk
+*.bak
+*.ncb
+*.aps
+*.exp
+*.vspscc
+*.vssscc
+*.ppw
+*.psess
+*.log
+*.vspx
+*.itm
+*.xap
+*.pfx
+*.svclog
+*.scc
+
+# Resharper
+_ReSharper*/
+*.resharper
+[Tt]humbs.db
+_ReSharper*/
+*.dotSettings.user
+
+# GhostDoc
+[Gg]host[Dd]oc[.]*.*
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+*.sln.iml
+*.dll.metadata
+*.lock
+*.resources
+_rider/
+sysout/
