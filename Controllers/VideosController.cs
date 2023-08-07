@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using videostore_be.Models;
+using videostore_be.service;
+namespace videostore_be.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

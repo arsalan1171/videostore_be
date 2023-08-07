@@ -1,6 +1,8 @@
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using videostore_be.Models;
+using videostore_be.Repository.Interface;
+namespace videostore_be.Repository;
 
 public class VideosRepository : IRepository<Videos>
 {
@@ -16,7 +18,7 @@ public class VideosRepository : IRepository<Videos>
         return await _context.Videos.ToListAsync();
     }
 
-    public async Task<Videos> GetByIdAsync(int id)
+    public virtual async Task<Videos> GetByIdAsync(int id)
     {
         return await _context.Videos.FindAsync(id);
     }

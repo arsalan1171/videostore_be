@@ -1,4 +1,6 @@
 using videostore_be.Models;
+using videostore_be.Repository.Interface;
+namespace videostore_be.service;
 
 public class VideoService
 {
@@ -9,6 +11,11 @@ public class VideoService
         _videoRepository = videoRepository;
     }
 
+    public VideoService()
+    {
+
+    }
+
     public async Task<IEnumerable<Videos>> getAllVideos() => await _videoRepository.GetAllAsync();
 
     public async Task<IEnumerable<Videos>> getVideosByTitle(string searchTerm) => await _videoRepository.GetByNameAsync(searchTerm);
@@ -17,7 +24,7 @@ public class VideoService
 
     public async Task<Videos> updateVideoAsync(int id, Videos video) => await _videoRepository.UpdateAsync(id, video);
 
-    public Task<Videos> getVideoById(int id) => _videoRepository.GetByIdAsync(id);
+    public virtual Task<Videos> getVideoById(int id) => _videoRepository.GetByIdAsync(id);
 
     // Implement other video-related business logic methods here if needed.
 }

@@ -1,6 +1,7 @@
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
 using videostore_be.Models;
+using videostore_be.Repository.Interface;
 
 public class CustomerRepository : IRepository<Customer>
 {

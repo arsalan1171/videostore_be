@@ -1,4 +1,5 @@
 using System.Linq.Expressions;
+namespace videostore_be.Repository.Interface;
 
 public interface IRepository<T> where T : class
 {

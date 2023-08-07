@@ -3,6 +3,8 @@ using videostore_be.Models;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
 using videostore_be.service;
+using videostore_be.Repository;
+using videostore_be.Repository.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.

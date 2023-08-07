@@ -1,5 +1,5 @@
 using videostore_be.Models;
-
+using videostore_be.Repository.Interface;
 
 public class CustomerService
 {
