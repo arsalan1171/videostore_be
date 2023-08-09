@@ -18,7 +18,7 @@ public class VideosRepository : IRepository<Videos>
         return await _context.Videos.ToListAsync();
     }
 
-    public virtual async Task<Videos> GetByIdAsync(int id)
+    public async Task<Videos> GetByIdAsync(int id)
     {
         return await _context.Videos.FindAsync(id);
     }
