@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using videostore_be.Models;
 
@@ -11,9 +12,11 @@ using videostore_be.Models;
 namespace videostorebe.Migrations
 {
     [DbContext(typeof(VideoStoreContext))]
-    partial class VideoStoreContextModelSnapshot : ModelSnapshot
+    [Migration("20230814191641_updateVideoModel")]
+    partial class updateVideoModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
